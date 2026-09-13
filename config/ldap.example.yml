@@ -1,0 +1,51 @@
+# AD/LDAP configuration — ops-managed, never edited through the web UI.
+#
+# Copy this file to config/ldap.yml (gitignored) and fill in real values.
+# The API loads it once at boot; after editing, either restart the API or
+# call `POST /api/v1/settings/ldap/reload` (admin permission required) to
+# pick up changes without a restart.
+#
+# LDAP_CONFIG_PATH env var overrides the default path (./config/ldap.yml)
+# if you want to keep this file elsewhere (e.g. a mounted secrets volume).
+
+enabled: false
+
+# Directory server
+host: ldap.example.com
+port: 389
+useTLS: false          # set true (and port 636) for ldaps://
+
+# Service account used to search the directory (read-only bind).
+# Do NOT use an admin/domain-admin account — a dedicated read-only service
+# account scoped to the search bases below is sufficient and safer.
+bindDN: "CN=svc-cra-platform,OU=Service Accounts,DC=example,DC=com"
+bindCredentials: "change-me"
+
+# Where to find user entries, and how to find one by the username the person types.
+userSearchBase: "OU=Users,DC=example,DC=com"
+userSearchFilter: "(sAMAccountName={{username}})"   # generic LDAP/OpenLDAP: "(uid={{username}})"
+
+# Group membership -> role mapping (optional). Two supported styles:
+#
+# 1. Active Directory style — the user entry itself carries a `memberOf`
+#    attribute listing group DNs. Leave groupSearchBase empty; set
+#    groupSearchAttr to "memberOf" (the default).
+#
+# 2. Generic LDAP / OpenLDAP reverse-lookup style — groups (e.g.
+#    groupOfNames) carry a "member" attribute pointing back at users. Set
+#    groupSearchBase to the group OU and groupSearchAttr to "member" (or
+#    "uniqueMember"); the platform will search that base for groups whose
+#    membership attribute references the authenticated user's DN.
+groupSearchAttr: memberOf
+# groupSearchBase: "OU=Groups,DC=example,DC=com"
+
+groupRoleMap:
+  - group: "CN=CRA-Admins,OU=Groups,DC=example,DC=com"
+    role: admin
+  - group: "CN=CRA-PSIRT-Analysts,OU=Groups,DC=example,DC=com"
+    role: psirt_analyst
+
+# Role assigned when a user's groups don't match any entry above. Leave
+# unset to grant no role by default (login still succeeds; an admin must
+# assign a role manually in Users before the account can do anything).
+# defaultRole: psirt_analyst

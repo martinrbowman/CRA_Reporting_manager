@@ -1,0 +1,13 @@
+node_modules/
+dist/
+.env
+*.log
+logs/*.log
+logs/*.log.*
+storage/
+.DS_Store
+*.tsbuildinfo
+.turbo/
+coverage/
+backups/*.dump
+config/ldap.yml

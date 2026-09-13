@@ -1,0 +1,24 @@
+{
+  "name": "cra-compliance-platform",
+  "version": "0.1.0",
+  "description": "Minimal PSIRT case management and CRA Art. 14 regulator-reporting platform, with local/Entra-ID/LDAP authentication.",
+  "license": "AGPL-3.0-or-later",
+  "author": "Martin Bowman",
+  "private": true,
+  "scripts": {
+    "build": "pnpm -r run build",
+    "dev": "pnpm --parallel -r run dev",
+    "dev:api": "pnpm --filter @cra/api run dev",
+    "dev:web": "pnpm --filter @cra/web run dev",
+    "typecheck": "pnpm -r run typecheck",
+    "lint": "pnpm -r run lint",
+    "clean": "pnpm -r run clean"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.5"
+  },
+  "engines": {
+    "node": ">=22.5.0",
+    "pnpm": ">=9.0.0"
+  }
+}

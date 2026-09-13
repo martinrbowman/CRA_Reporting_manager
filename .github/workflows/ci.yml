@@ -1,0 +1,69 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 9
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: .nvmrc
+          cache: pnpm
+
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm --filter @cra/shared build
+      - run: pnpm -r run typecheck
+      - run: pnpm -r run build
+
+  db-smoke:
+    runs-on: ubuntu-latest
+    services:
+      postgres:
+        image: postgres:16-alpine
+        env:
+          POSTGRES_USER: cra_user
+          POSTGRES_PASSWORD: ci_test_password
+          POSTGRES_DB: cra_platform
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd "pg_isready -U cra_user -d cra_platform"
+          --health-interval 5s
+          --health-timeout 5s
+          --health-retries 10
+    env:
+      DATABASE_URL: postgresql://cra_user:ci_test_password@localhost:5432/cra_platform
+      JWT_SECRET: ci-only-secret-not-for-production-use-32chars-min
+      ADMIN_EMAIL: ci-admin@example.com
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 9
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: .nvmrc
+          cache: pnpm
+
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm --filter @cra/shared build
+      - run: pnpm --filter @cra/api build
+
+      # Smoke-tests that the schema/migrations/seed script actually run
+      # cleanly against a real Postgres — catches drift that a plain
+      # `tsc --noEmit` typecheck wouldn't.
+      - run: pnpm --filter @cra/api db:migrate
+      - run: pnpm --filter @cra/api db:seed

@@ -1,0 +1,49 @@
+{
+  "name": "@cra/api",
+  "version": "0.1.0",
+  "description": "Fastify + Drizzle/Postgres backend for the CRA Compliance Platform.",
+  "license": "AGPL-3.0-or-later",
+  "private": true,
+  "type": "module",
+  "main": "./dist/index.js",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "typecheck": "tsc --noEmit",
+    "clean": "rm -rf dist",
+    "db:generate": "drizzle-kit generate",
+    "db:migrate": "tsx src/db/migrate.ts",
+    "db:studio": "drizzle-kit studio",
+    "db:seed": "tsx src/db/seed.ts"
+  },
+  "dependencies": {
+    "@cra/shared": "workspace:*",
+    "@fastify/cors": "^9.0.1",
+    "@fastify/helmet": "^11.1.1",
+    "@fastify/jwt": "^8.0.1",
+    "@fastify/multipart": "^8.3.0",
+    "argon2": "^0.40.3",
+    "dotenv": "^16.4.5",
+    "drizzle-orm": "^0.31.2",
+    "fastify": "^4.27.0",
+    "fastify-plugin": "^4.5.1",
+    "js-yaml": "^4.1.0",
+    "ldapjs": "^3.0.7",
+    "nodemailer": "^9.0.3",
+    "pdfmake": "^0.2.12",
+    "pino-pretty": "^11.2.1",
+    "postgres": "^3.4.4",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/js-yaml": "^4.0.9",
+    "@types/ldapjs": "^3.0.6",
+    "@types/node": "^20.14.2",
+    "@types/nodemailer": "^8.0.1",
+    "@types/pdfmake": "^0.2.9",
+    "drizzle-kit": "^0.22.7",
+    "tsx": "^4.15.6",
+    "typescript": "^5.4.5"
+  }
+}

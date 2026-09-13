@@ -1,0 +1,1757 @@
+{
+  "$schema": "http://cyclonedx.org/schema/bom-1.5.schema.json",
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.5",
+  "version": 1,
+  "serialNumber": "urn:uuid:5b3741c5-ac51-4716-b833-de7e266eb028",
+  "metadata": {
+    "timestamp": "2026-09-13T01:03:09.451Z",
+    "tools": {
+      "components": [
+        {
+          "type": "application",
+          "name": "npm",
+          "version": "11.19.0"
+        },
+        {
+          "type": "application",
+          "name": "cyclonedx-npm",
+          "group": "@cyclonedx",
+          "version": "6.0.1",
+          "author": "Jan Kowalleck",
+          "description": "Create CycloneDX Software Bill of Materials (SBOM) from NPM projects.",
+          "licenses": [
+            {
+              "license": {
+                "id": "Apache-2.0"
+              }
+            }
+          ],
+          "externalReferences": [
+            {
+              "url": "git+https://github.com/CycloneDX/cyclonedx-node-npm.git",
+              "type": "vcs",
+              "comment": "as detected from PackageJson property \"repository.url\""
+            },
+            {
+              "url": "https://github.com/CycloneDX/cyclonedx-node-npm#readme",
+              "type": "website",
+              "comment": "as detected from PackageJson property \"homepage\""
+            },
+            {
+              "url": "https://github.com/CycloneDX/cyclonedx-node-npm/issues",
+              "type": "issue-tracker",
+              "comment": "as detected from PackageJson property \"bugs.url\""
+            }
+          ],
+          "properties": [
+            {
+              "name": "cdx:npm:package:constraint:engine:node",
+              "value": ">=20.18.0"
+            },
+            {
+              "name": "cdx:npm:package:constraint:engine:npm",
+              "value": ">=9"
+            }
+          ]
+        },
+        {
+          "type": "library",
+          "name": "cyclonedx-library",
+          "group": "@cyclonedx",
+          "version": "10.2.0",
+          "author": "Jan Kowalleck",
+          "description": "Core functionality of CycloneDX for JavaScript (Node.js or WebBrowser).",
+          "licenses": [
+            {
+              "license": {
+                "id": "Apache-2.0"
+              }
+            }
+          ],
+          "externalReferences": [
+            {
+              "url": "git+https://github.com/CycloneDX/cyclonedx-javascript-library.git",
+              "type": "vcs",
+              "comment": "as detected from PackageJson property \"repository.url\""
+            },
+            {
+              "url": "https://github.com/CycloneDX/cyclonedx-javascript-library#readme",
+              "type": "website",
+              "comment": "as detected from PackageJson property \"homepage\""
+            },
+            {
+              "url": "https://github.com/CycloneDX/cyclonedx-javascript-library/issues",
+              "type": "issue-tracker",
+              "comment": "as detected from PackageJson property \"bugs.url\""
+            }
+          ],
+          "properties": [
+            {
+              "name": "cdx:npm:package:constraint:engine:node",
+              "value": ">=20.18.0"
+            }
+          ]
+        }
+      ]
+    },
+    "component": {
+      "type": "application",
+      "name": "shared",
+      "group": "@cra",
+      "version": "0.1.0",
+      "bom-ref": "@cra/shared@0.1.0",
+      "description": "Shared Zod schemas and enums for the CRA Compliance Platform.",
+      "licenses": [
+        {
+          "license": {
+            "id": "AGPL-3.0-or-later"
+          }
+        }
+      ],
+      "purl": "pkg:npm/%40cra/shared@0.1.0",
+      "properties": [
+        {
+          "name": "cdx:npm:package:private",
+          "value": "true"
+        },
+        {
+          "name": "cdx:npm:package:path",
+          "value": ""
+        }
+      ]
+    }
+  },
+  "components": [
+    {
+      "type": "library",
+      "name": "node",
+      "group": "@types",
+      "version": "20.19.43",
+      "bom-ref": "@types/node@20.19.43",
+      "description": "TypeScript definitions for node",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "purl": "pkg:npm/%40types/node@20.19.43",
+      "externalReferences": [
+        {
+          "url": "git+https://github.com/DefinitelyTyped/DefinitelyTyped.git#types/node",
+          "type": "vcs",
+          "comment": "as detected from PackageJson property \"repository.url\" and \"repository.directory\""
+        },
+        {
+          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/node",
+          "type": "website",
+          "comment": "as detected from PackageJson property \"homepage\""
+        },
+        {
+          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/issues",
+          "type": "issue-tracker",
+          "comment": "as detected from PackageJson property \"bugs.url\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "cdx:npm:package:path",
+          "value": "../../node_modules/.pnpm/node_modules/@types/node"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "chokidar",
+      "version": "3.6.0",
+      "bom-ref": "chokidar@3.6.0",
+      "author": "Paul Miller",
+      "description": "Minimal and efficient cross-platform file watching library",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "purl": "pkg:npm/chokidar@3.6.0",
+      "externalReferences": [
+        {
+          "url": "git+https://github.com/paulmillr/chokidar.git",
+          "type": "vcs",
+          "comment": "as detected from PackageJson property \"repository.url\""
+        },
+        {
+          "url": "https://github.com/paulmillr/chokidar",
+          "type": "website",
+          "comment": "as detected from PackageJson property \"homepage\""
+        },
+        {
+          "url": "https://github.com/paulmillr/chokidar/issues",
+          "type": "issue-tracker",
+          "comment": "as detected from PackageJson property \"bugs.url\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "cdx:npm:package:constraint:engine:node",
+          "value": ">= 8.10.0"
+        },
+        {
+          "name": "cdx:npm:package:path",
+          "value": "../../node_modules/.pnpm/node_modules/chokidar"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "esbuild",
+      "version": "0.19.12",
+      "bom-ref": "esbuild@0.19.12",
+      "description": "An extremely fast JavaScript and CSS bundler and minifier.",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "purl": "pkg:npm/esbuild@0.19.12",
+      "externalReferences": [
+        {
+          "url": "git+https://github.com/evanw/esbuild.git",
+          "type": "vcs",
+          "comment": "as detected from PackageJson property \"repository.url\""
+        },
+        {
+          "url": "https://github.com/evanw/esbuild#readme",
+          "type": "website",
+          "comment": "as detected from PackageJson property \"homepage\""
+        },
+        {
+          "url": "https://github.com/evanw/esbuild/issues",
+          "type": "issue-tracker",
+          "comment": "as detected from PackageJson property \"bugs.url\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "cdx:npm:package:constraint:engine:node",
+          "value": ">=12"
+        },
+        {
+          "name": "cdx:npm:package:path",
+          "value": "../../node_modules/.pnpm/node_modules/esbuild"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "minimist",
+      "version": "1.2.8",
+      "bom-ref": "minimist@1.2.8",
+      "author": "James Halliday",
+      "description": "parse argument options",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "purl": "pkg:npm/minimist@1.2.8",
+      "externalReferences": [
+        {
+          "url": "git://github.com/minimistjs/minimist.git",
+          "type": "vcs",
+          "comment": "as detected from PackageJson property \"repository.url\""
+        },
+        {
+          "url": "https://github.com/minimistjs/minimist",
+          "type": "website",
+          "comment": "as detected from PackageJson property \"homepage\""
+        },
+        {
+          "url": "https://github.com/minimistjs/minimist/issues",
+          "type": "issue-tracker",
+          "comment": "as detected from PackageJson property \"bugs.url\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "cdx:npm:package:path",
+          "value": "../../node_modules/.pnpm/node_modules/minimist"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "ms",
+      "version": "2.1.3",
+      "bom-ref": "ms@2.1.3",
+      "description": "Tiny millisecond conversion utility",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "purl": "pkg:npm/ms@2.1.3",
+      "externalReferences": [
+        {
+          "url": "git+https://github.com/vercel/ms.git",
+          "type": "vcs",
+          "comment": "as detected from PackageJson property \"repository.url\""
+        },
+        {
+          "url": "https://github.com/vercel/ms#readme",
+          "type": "website",
+          "comment": "as detected from PackageJson property \"homepage\""
+        },
+        {
+          "url": "https://github.com/vercel/ms/issues",
+          "type": "issue-tracker",
+          "comment": "as detected from PackageJson property \"bugs.url\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "cdx:npm:package:path",
+          "value": "../../node_modules/.pnpm/node_modules/ms"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "picocolors",
+      "version": "1.1.1",
+      "bom-ref": "picocolors@1.1.1",
+      "author": "Alexey Raspopov",
+      "description": "The tiniest and the fastest library for terminal output formatting with ANSI colors",
+      "licenses": [
+        {
+          "license": {
+            "id": "ISC"
+          }
+        }
+      ],
+      "purl": "pkg:npm/picocolors@1.1.1",
+      "externalReferences": [
+        {
+          "url": "git+https://github.com/alexeyraspopov/picocolors.git",
+          "type": "vcs",
+          "comment": "as detected from PackageJson property \"repository.url\""
+        },
+        {
+          "url": "https://github.com/alexeyraspopov/picocolors#readme",
+          "type": "website",
+          "comment": "as detected from PackageJson property \"homepage\""
+        },
+        {
+          "url": "https://github.com/alexeyraspopov/picocolors/issues",
+          "type": "issue-tracker",
+          "comment": "as detected from PackageJson property \"bugs.url\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "cdx:npm:package:path",
+          "value": "../../node_modules/.pnpm/node_modules/picocolors"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "source-map-support",
+      "version": "0.5.21",
+      "bom-ref": "source-map-support@0.5.21",
+      "description": "Fixes stack traces for files with source maps",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "purl": "pkg:npm/source-map-support@0.5.21",
+      "externalReferences": [
+        {
+          "url": "git+https://github.com/evanw/node-source-map-support.git",
+          "type": "vcs",
+          "comment": "as detected from PackageJson property \"repository.url\""
+        },
+        {
+          "url": "https://github.com/evanw/node-source-map-support#readme",
+          "type": "website",
+          "comment": "as detected from PackageJson property \"homepage\""
+        },
+        {
+          "url": "https://github.com/evanw/node-source-map-support/issues",
+          "type": "issue-tracker",
+          "comment": "as detected from PackageJson property \"bugs.url\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "cdx:npm:package:path",
+          "value": "../../node_modules/.pnpm/node_modules/source-map-support"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "tslib",
+      "version": "2.8.1",
+      "bom-ref": "tslib@2.8.1",
+      "author": "Microsoft Corp.",
+      "description": "Runtime library for TypeScript helper functions",
+      "licenses": [
+        {
+          "license": {
+            "id": "0BSD"
+          }
+        }
+      ],
+      "purl": "pkg:npm/tslib@2.8.1",
+      "externalReferences": [
+        {
+          "url": "git+https://github.com/Microsoft/tslib.git",
+          "type": "vcs",
+          "comment": "as detected from PackageJson property \"repository.url\""
+        },
+        {
+          "url": "https://www.typescriptlang.org/",
+          "type": "website",
+          "comment": "as detected from PackageJson property \"homepage\""
+        },
+        {
+          "url": "https://github.com/Microsoft/TypeScript/issues",
+          "type": "issue-tracker",
+          "comment": "as detected from PackageJson property \"bugs.url\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "cdx:npm:package:path",
+          "value": "../../node_modules/.pnpm/node_modules/tslib"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "typescript",
+      "version": "5.9.3",
+      "bom-ref": "typescript@5.9.3",
+      "author": "Microsoft Corp.",
+      "description": "TypeScript is a language for application scale JavaScript development",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "purl": "pkg:npm/typescript@5.9.3",
+      "externalReferences": [
+        {
+          "url": "git+https://github.com/microsoft/TypeScript.git",
+          "type": "vcs",
+          "comment": "as detected from PackageJson property \"repository.url\""
+        },
+        {
+          "url": "https://www.typescriptlang.org/",
+          "type": "website",
+          "comment": "as detected from PackageJson property \"homepage\""
+        },
+        {
+          "url": "https://github.com/microsoft/TypeScript/issues",
+          "type": "issue-tracker",
+          "comment": "as detected from PackageJson property \"bugs.url\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "cdx:npm:package:constraint:engine:node",
+          "value": ">=14.17"
+        },
+        {
+          "name": "cdx:npm:package:path",
+          "value": "../../node_modules/.pnpm/typescript@5.9.3/node_modules/typescript"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "undici-types",
+      "version": "6.21.0",
+      "bom-ref": "undici-types@6.21.0",
+      "description": "A stand-alone types package for Undici",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "purl": "pkg:npm/undici-types@6.21.0",
+      "externalReferences": [
+        {
+          "url": "git+https://github.com/nodejs/undici.git",
+          "type": "vcs",
+          "comment": "as detected from PackageJson property \"repository.url\""
+        },
+        {
+          "url": "https://undici.nodejs.org",
+          "type": "website",
+          "comment": "as detected from PackageJson property \"homepage\""
+        },
+        {
+          "url": "https://github.com/nodejs/undici/issues",
+          "type": "issue-tracker",
+          "comment": "as detected from PackageJson property \"bugs.url\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "cdx:npm:package:path",
+          "value": "../../node_modules/.pnpm/@types+node@20.19.43/node_modules/undici-types"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "anymatch",
+      "version": "3.1.3",
+      "bom-ref": "anymatch@3.1.3",
+      "author": "Elan Shanker",
+      "description": "Matches strings against configurable strings, globs, regular expressions, and/or functions",
+      "licenses": [
+        {
+          "license": {
+            "id": "ISC"
+          }
+        }
+      ],
+      "purl": "pkg:npm/anymatch@3.1.3",
+      "externalReferences": [
+        {
+          "url": "git+https://github.com/micromatch/anymatch.git",
+          "type": "vcs",
+          "comment": "as detected from PackageJson property \"repository.url\""
+        },
+        {
+          "url": "https://github.com/micromatch/anymatch",
+          "type": "website",
+          "comment": "as detected from PackageJson property \"homepage\""
+        },
+        {
+          "url": "https://github.com/micromatch/anymatch/issues",
+          "type": "issue-tracker",
+          "comment": "as detected from PackageJson property \"bugs.url\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "cdx:npm:package:constraint:engine:node",
+          "value": ">= 8"
+        },
+        {
+          "name": "cdx:npm:package:path",
+          "value": "../../node_modules/.pnpm/chokidar@3.6.0/node_modules/anymatch"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "braces",
+      "version": "3.0.3",
+      "bom-ref": "braces@3.0.3",
+      "author": "Jon Schlinkert",
+      "description": "Bash-like brace expansion, implemented in JavaScript. Safer than other brace expansion libs, with complete support for the Bash 4.3 braces specification, without sacrificing speed.",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "purl": "pkg:npm/braces@3.0.3",
+      "externalReferences": [
+        {
+          "url": "git+https://github.com/micromatch/braces.git",
+          "type": "vcs",
+          "comment": "as detected from PackageJson property \"repository.url\""
+        },
+        {
+          "url": "https://github.com/micromatch/braces",
+          "type": "website",
+          "comment": "as detected from PackageJson property \"homepage\""
+        },
+        {
+          "url": "https://github.com/micromatch/braces/issues",
+          "type": "issue-tracker",
+          "comment": "as detected from PackageJson property \"bugs.url\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "cdx:npm:package:constraint:engine:node",
+          "value": ">=8"
+        },
+        {
+          "name": "cdx:npm:package:path",
+          "value": "../../node_modules/.pnpm/chokidar@3.6.0/node_modules/braces"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "fsevents",
+      "version": "2.3.3",
+      "bom-ref": "fsevents@2.3.3",
+      "description": "Native Access to MacOS FSEvents",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "purl": "pkg:npm/fsevents@2.3.3",
+      "externalReferences": [
+        {
+          "url": "git+https://github.com/fsevents/fsevents.git",
+          "type": "vcs",
+          "comment": "as detected from PackageJson property \"repository.url\""
+        },
+        {
+          "url": "https://github.com/fsevents/fsevents",
+          "type": "website",
+          "comment": "as detected from PackageJson property \"homepage\""
+        },
+        {
+          "url": "https://github.com/fsevents/fsevents/issues",
+          "type": "issue-tracker",
+          "comment": "as detected from PackageJson property \"bugs.url\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "cdx:npm:package:constraint:engine:node",
+          "value": "^8.16.0 || ^10.6.0 || >=11.0.0"
+        },
+        {
+          "name": "cdx:npm:package:path",
+          "value": "../../node_modules/.pnpm/chokidar@3.6.0/node_modules/fsevents"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "glob-parent",
+      "version": "5.1.2",
+      "bom-ref": "glob-parent@5.1.2",
+      "author": "Gulp Team",
+      "description": "Extract the non-magic parent path from a glob string.",
+      "licenses": [
+        {
+          "license": {
+            "id": "ISC"
+          }
+        }
+      ],
+      "purl": "pkg:npm/glob-parent@5.1.2",
+      "externalReferences": [
+        {
+          "url": "git+https://github.com/gulpjs/glob-parent.git",
+          "type": "vcs",
+          "comment": "as detected from PackageJson property \"repository.url\""
+        },
+        {
+          "url": "https://github.com/gulpjs/glob-parent#readme",
+          "type": "website",
+          "comment": "as detected from PackageJson property \"homepage\""
+        },
+        {
+          "url": "https://github.com/gulpjs/glob-parent/issues",
+          "type": "issue-tracker",
+          "comment": "as detected from PackageJson property \"bugs.url\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "cdx:npm:package:constraint:engine:node",
+          "value": ">= 6"
+        },
+        {
+          "name": "cdx:npm:package:path",
+          "value": "../../node_modules/.pnpm/chokidar@3.6.0/node_modules/glob-parent"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "is-binary-path",
+      "version": "2.1.0",
+      "bom-ref": "is-binary-path@2.1.0",
+      "author": "Sindre Sorhus",
+      "description": "Check if a file path is a binary file",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "purl": "pkg:npm/is-binary-path@2.1.0",
+      "externalReferences": [
+        {
+          "url": "git+https://github.com/sindresorhus/is-binary-path.git",
+          "type": "vcs",
+          "comment": "as detected from PackageJson property \"repository.url\""
+        },
+        {
+          "url": "https://github.com/sindresorhus/is-binary-path#readme",
+          "type": "website",
+          "comment": "as detected from PackageJson property \"homepage\""
+        },
+        {
+          "url": "https://github.com/sindresorhus/is-binary-path/issues",
+          "type": "issue-tracker",
+          "comment": "as detected from PackageJson property \"bugs.url\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "cdx:npm:package:constraint:engine:node",
+          "value": ">=8"
+        },
+        {
+          "name": "cdx:npm:package:path",
+          "value": "../../node_modules/.pnpm/chokidar@3.6.0/node_modules/is-binary-path"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "is-glob",
+      "version": "4.0.3",
+      "bom-ref": "is-glob@4.0.3",
+      "author": "Jon Schlinkert",
+      "description": "Returns `true` if the given string looks like a glob pattern or an extglob pattern. This makes it easy to create code that only uses external modules like node-glob when necessary, resulting in much faster code execution and initialization time, and a better user experience.",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "purl": "pkg:npm/is-glob@4.0.3",
+      "externalReferences": [
+        {
+          "url": "git+https://github.com/micromatch/is-glob.git",
+          "type": "vcs",
+          "comment": "as detected from PackageJson property \"repository.url\""
+        },
+        {
+          "url": "https://github.com/micromatch/is-glob",
+          "type": "website",
+          "comment": "as detected from PackageJson property \"homepage\""
+        },
+        {
+          "url": "https://github.com/micromatch/is-glob/issues",
+          "type": "issue-tracker",
+          "comment": "as detected from PackageJson property \"bugs.url\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "cdx:npm:package:constraint:engine:node",
+          "value": ">=0.10.0"
+        },
+        {
+          "name": "cdx:npm:package:path",
+          "value": "../../node_modules/.pnpm/chokidar@3.6.0/node_modules/is-glob"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "normalize-path",
+      "version": "3.0.0",
+      "bom-ref": "normalize-path@3.0.0",
+      "author": "Jon Schlinkert",
+      "description": "Normalize slashes in a file path to be posix/unix-like forward slashes. Also condenses repeat slashes to a single slash and removes and trailing slashes, unless disabled.",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "purl": "pkg:npm/normalize-path@3.0.0",
+      "externalReferences": [
+        {
+          "url": "git+https://github.com/jonschlinkert/normalize-path.git",
+          "type": "vcs",
+          "comment": "as detected from PackageJson property \"repository.url\""
+        },
+        {
+          "url": "https://github.com/jonschlinkert/normalize-path",
+          "type": "website",
+          "comment": "as detected from PackageJson property \"homepage\""
+        },
+        {
+          "url": "https://github.com/jonschlinkert/normalize-path/issues",
+          "type": "issue-tracker",
+          "comment": "as detected from PackageJson property \"bugs.url\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "cdx:npm:package:constraint:engine:node",
+          "value": ">=0.10.0"
+        },
+        {
+          "name": "cdx:npm:package:path",
+          "value": "../../node_modules/.pnpm/chokidar@3.6.0/node_modules/normalize-path"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "readdirp",
+      "version": "3.6.0",
+      "bom-ref": "readdirp@3.6.0",
+      "author": "Thorsten Lorenz",
+      "description": "Recursive version of fs.readdir with streaming API.",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "purl": "pkg:npm/readdirp@3.6.0",
+      "externalReferences": [
+        {
+          "url": "git://github.com/paulmillr/readdirp.git",
+          "type": "vcs",
+          "comment": "as detected from PackageJson property \"repository.url\""
+        },
+        {
+          "url": "https://github.com/paulmillr/readdirp",
+          "type": "website",
+          "comment": "as detected from PackageJson property \"homepage\""
+        },
+        {
+          "url": "https://github.com/paulmillr/readdirp/issues",
+          "type": "issue-tracker",
+          "comment": "as detected from PackageJson property \"bugs.url\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "cdx:npm:package:constraint:engine:node",
+          "value": ">=8.10.0"
+        },
+        {
+          "name": "cdx:npm:package:path",
+          "value": "../../node_modules/.pnpm/chokidar@3.6.0/node_modules/readdirp"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "typescript",
+      "version": "5.9.3",
+      "bom-ref": "typescript@5.9.3#2",
+      "author": "Microsoft Corp.",
+      "description": "TypeScript is a language for application scale JavaScript development",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "purl": "pkg:npm/typescript@5.9.3",
+      "externalReferences": [
+        {
+          "url": "git+https://github.com/microsoft/TypeScript.git",
+          "type": "vcs",
+          "comment": "as detected from PackageJson property \"repository.url\""
+        },
+        {
+          "url": "https://www.typescriptlang.org/",
+          "type": "website",
+          "comment": "as detected from PackageJson property \"homepage\""
+        },
+        {
+          "url": "https://github.com/microsoft/TypeScript/issues",
+          "type": "issue-tracker",
+          "comment": "as detected from PackageJson property \"bugs.url\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "cdx:npm:package:constraint:engine:node",
+          "value": ">=14.17"
+        },
+        {
+          "name": "cdx:npm:package:path",
+          "value": "../../node_modules/typescript"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "darwin-arm64",
+      "group": "@esbuild",
+      "version": "0.19.12",
+      "bom-ref": "@esbuild/darwin-arm64@0.19.12",
+      "description": "The macOS ARM 64-bit binary for esbuild, a JavaScript bundler.",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "purl": "pkg:npm/%40esbuild/darwin-arm64@0.19.12",
+      "externalReferences": [
+        {
+          "url": "git+https://github.com/evanw/esbuild.git",
+          "type": "vcs",
+          "comment": "as detected from PackageJson property \"repository.url\""
+        },
+        {
+          "url": "https://github.com/evanw/esbuild#readme",
+          "type": "website",
+          "comment": "as detected from PackageJson property \"homepage\""
+        },
+        {
+          "url": "https://github.com/evanw/esbuild/issues",
+          "type": "issue-tracker",
+          "comment": "as detected from PackageJson property \"bugs.url\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "cdx:npm:package:constraint:engine:node",
+          "value": ">=12"
+        },
+        {
+          "name": "cdx:npm:package:path",
+          "value": "../../node_modules/.pnpm/esbuild@0.19.12/node_modules/@esbuild/darwin-arm64"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "buffer-from",
+      "version": "1.1.2",
+      "bom-ref": "buffer-from@1.1.2",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "purl": "pkg:npm/buffer-from@1.1.2",
+      "externalReferences": [
+        {
+          "url": "git+https://github.com/LinusU/buffer-from.git",
+          "type": "vcs",
+          "comment": "as detected from PackageJson property \"repository.url\""
+        },
+        {
+          "url": "https://github.com/LinusU/buffer-from#readme",
+          "type": "website",
+          "comment": "as detected from PackageJson property \"homepage\""
+        },
+        {
+          "url": "https://github.com/LinusU/buffer-from/issues",
+          "type": "issue-tracker",
+          "comment": "as detected from PackageJson property \"bugs.url\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "cdx:npm:package:path",
+          "value": "../../node_modules/.pnpm/source-map-support@0.5.21/node_modules/buffer-from"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "source-map",
+      "version": "0.6.1",
+      "bom-ref": "source-map@0.6.1",
+      "author": "Nick Fitzgerald",
+      "description": "Generates and consumes source maps",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        }
+      ],
+      "purl": "pkg:npm/source-map@0.6.1",
+      "externalReferences": [
+        {
+          "url": "git+ssh://git@github.com/mozilla/source-map.git",
+          "type": "vcs",
+          "comment": "as detected from PackageJson property \"repository.url\""
+        },
+        {
+          "url": "https://github.com/mozilla/source-map",
+          "type": "website",
+          "comment": "as detected from PackageJson property \"homepage\""
+        },
+        {
+          "url": "https://github.com/mozilla/source-map/issues",
+          "type": "issue-tracker",
+          "comment": "as detected from PackageJson property \"bugs.url\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "cdx:npm:package:constraint:engine:node",
+          "value": ">=0.10.0"
+        },
+        {
+          "name": "cdx:npm:package:path",
+          "value": "../../node_modules/.pnpm/source-map-support@0.5.21/node_modules/source-map"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "normalize-path",
+      "version": "3.0.0",
+      "bom-ref": "normalize-path@3.0.0#2",
+      "author": "Jon Schlinkert",
+      "description": "Normalize slashes in a file path to be posix/unix-like forward slashes. Also condenses repeat slashes to a single slash and removes and trailing slashes, unless disabled.",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "purl": "pkg:npm/normalize-path@3.0.0",
+      "externalReferences": [
+        {
+          "url": "git+https://github.com/jonschlinkert/normalize-path.git",
+          "type": "vcs",
+          "comment": "as detected from PackageJson property \"repository.url\""
+        },
+        {
+          "url": "https://github.com/jonschlinkert/normalize-path",
+          "type": "website",
+          "comment": "as detected from PackageJson property \"homepage\""
+        },
+        {
+          "url": "https://github.com/jonschlinkert/normalize-path/issues",
+          "type": "issue-tracker",
+          "comment": "as detected from PackageJson property \"bugs.url\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "cdx:npm:package:constraint:engine:node",
+          "value": ">=0.10.0"
+        },
+        {
+          "name": "cdx:npm:package:path",
+          "value": "../../node_modules/.pnpm/anymatch@3.1.3/node_modules/normalize-path"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "picomatch",
+      "version": "2.3.2",
+      "bom-ref": "picomatch@2.3.2",
+      "author": "Jon Schlinkert",
+      "description": "Blazing fast and accurate glob matcher written in JavaScript, with no dependencies and full support for standard and extended Bash glob features, including braces, extglobs, POSIX brackets, and regular expressions.",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "purl": "pkg:npm/picomatch@2.3.2",
+      "externalReferences": [
+        {
+          "url": "git+https://github.com/micromatch/picomatch.git",
+          "type": "vcs",
+          "comment": "as detected from PackageJson property \"repository.url\""
+        },
+        {
+          "url": "https://github.com/micromatch/picomatch",
+          "type": "website",
+          "comment": "as detected from PackageJson property \"homepage\""
+        },
+        {
+          "url": "https://github.com/micromatch/picomatch/issues",
+          "type": "issue-tracker",
+          "comment": "as detected from PackageJson property \"bugs.url\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "cdx:npm:package:constraint:engine:node",
+          "value": ">=8.6"
+        },
+        {
+          "name": "cdx:npm:package:path",
+          "value": "../../node_modules/.pnpm/anymatch@3.1.3/node_modules/picomatch"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "fill-range",
+      "version": "7.1.1",
+      "bom-ref": "fill-range@7.1.1",
+      "author": "Jon Schlinkert",
+      "description": "Fill in a range of numbers or letters, optionally passing an increment or `step` to use, or create a regex-compatible range with `options.toRegex`",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "purl": "pkg:npm/fill-range@7.1.1",
+      "externalReferences": [
+        {
+          "url": "git+https://github.com/jonschlinkert/fill-range.git",
+          "type": "vcs",
+          "comment": "as detected from PackageJson property \"repository.url\""
+        },
+        {
+          "url": "https://github.com/jonschlinkert/fill-range",
+          "type": "website",
+          "comment": "as detected from PackageJson property \"homepage\""
+        },
+        {
+          "url": "https://github.com/jonschlinkert/fill-range/issues",
+          "type": "issue-tracker",
+          "comment": "as detected from PackageJson property \"bugs.url\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "cdx:npm:package:constraint:engine:node",
+          "value": ">=8"
+        },
+        {
+          "name": "cdx:npm:package:path",
+          "value": "../../node_modules/.pnpm/braces@3.0.3/node_modules/fill-range"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "is-glob",
+      "version": "4.0.3",
+      "bom-ref": "is-glob@4.0.3#2",
+      "author": "Jon Schlinkert",
+      "description": "Returns `true` if the given string looks like a glob pattern or an extglob pattern. This makes it easy to create code that only uses external modules like node-glob when necessary, resulting in much faster code execution and initialization time, and a better user experience.",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "purl": "pkg:npm/is-glob@4.0.3",
+      "externalReferences": [
+        {
+          "url": "git+https://github.com/micromatch/is-glob.git",
+          "type": "vcs",
+          "comment": "as detected from PackageJson property \"repository.url\""
+        },
+        {
+          "url": "https://github.com/micromatch/is-glob",
+          "type": "website",
+          "comment": "as detected from PackageJson property \"homepage\""
+        },
+        {
+          "url": "https://github.com/micromatch/is-glob/issues",
+          "type": "issue-tracker",
+          "comment": "as detected from PackageJson property \"bugs.url\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "cdx:npm:package:constraint:engine:node",
+          "value": ">=0.10.0"
+        },
+        {
+          "name": "cdx:npm:package:path",
+          "value": "../../node_modules/.pnpm/glob-parent@5.1.2/node_modules/is-glob"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "binary-extensions",
+      "version": "2.3.0",
+      "bom-ref": "binary-extensions@2.3.0",
+      "author": "Sindre Sorhus",
+      "description": "List of binary file extensions",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "purl": "pkg:npm/binary-extensions@2.3.0",
+      "externalReferences": [
+        {
+          "url": "git+https://github.com/sindresorhus/binary-extensions.git",
+          "type": "vcs",
+          "comment": "as detected from PackageJson property \"repository.url\""
+        },
+        {
+          "url": "https://github.com/sindresorhus/binary-extensions#readme",
+          "type": "website",
+          "comment": "as detected from PackageJson property \"homepage\""
+        },
+        {
+          "url": "https://github.com/sindresorhus/binary-extensions/issues",
+          "type": "issue-tracker",
+          "comment": "as detected from PackageJson property \"bugs.url\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "cdx:npm:package:constraint:engine:node",
+          "value": ">=8"
+        },
+        {
+          "name": "cdx:npm:package:path",
+          "value": "../../node_modules/.pnpm/is-binary-path@2.1.0/node_modules/binary-extensions"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "is-extglob",
+      "version": "2.1.1",
+      "bom-ref": "is-extglob@2.1.1",
+      "author": "Jon Schlinkert",
+      "description": "Returns true if a string has an extglob.",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "purl": "pkg:npm/is-extglob@2.1.1",
+      "externalReferences": [
+        {
+          "url": "git+https://github.com/jonschlinkert/is-extglob.git",
+          "type": "vcs",
+          "comment": "as detected from PackageJson property \"repository.url\""
+        },
+        {
+          "url": "https://github.com/jonschlinkert/is-extglob",
+          "type": "website",
+          "comment": "as detected from PackageJson property \"homepage\""
+        },
+        {
+          "url": "https://github.com/jonschlinkert/is-extglob/issues",
+          "type": "issue-tracker",
+          "comment": "as detected from PackageJson property \"bugs.url\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "cdx:npm:package:constraint:engine:node",
+          "value": ">=0.10.0"
+        },
+        {
+          "name": "cdx:npm:package:path",
+          "value": "../../node_modules/.pnpm/is-glob@4.0.3/node_modules/is-extglob"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "picomatch",
+      "version": "2.3.2",
+      "bom-ref": "picomatch@2.3.2#2",
+      "author": "Jon Schlinkert",
+      "description": "Blazing fast and accurate glob matcher written in JavaScript, with no dependencies and full support for standard and extended Bash glob features, including braces, extglobs, POSIX brackets, and regular expressions.",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "purl": "pkg:npm/picomatch@2.3.2",
+      "externalReferences": [
+        {
+          "url": "git+https://github.com/micromatch/picomatch.git",
+          "type": "vcs",
+          "comment": "as detected from PackageJson property \"repository.url\""
+        },
+        {
+          "url": "https://github.com/micromatch/picomatch",
+          "type": "website",
+          "comment": "as detected from PackageJson property \"homepage\""
+        },
+        {
+          "url": "https://github.com/micromatch/picomatch/issues",
+          "type": "issue-tracker",
+          "comment": "as detected from PackageJson property \"bugs.url\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "cdx:npm:package:constraint:engine:node",
+          "value": ">=8.6"
+        },
+        {
+          "name": "cdx:npm:package:path",
+          "value": "../../node_modules/.pnpm/readdirp@3.6.0/node_modules/picomatch"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "fill-range",
+      "version": "7.1.1",
+      "bom-ref": "fill-range@7.1.1#2",
+      "author": "Jon Schlinkert",
+      "description": "Fill in a range of numbers or letters, optionally passing an increment or `step` to use, or create a regex-compatible range with `options.toRegex`",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "purl": "pkg:npm/fill-range@7.1.1",
+      "externalReferences": [
+        {
+          "url": "git+https://github.com/jonschlinkert/fill-range.git",
+          "type": "vcs",
+          "comment": "as detected from PackageJson property \"repository.url\""
+        },
+        {
+          "url": "https://github.com/jonschlinkert/fill-range",
+          "type": "website",
+          "comment": "as detected from PackageJson property \"homepage\""
+        },
+        {
+          "url": "https://github.com/jonschlinkert/fill-range/issues",
+          "type": "issue-tracker",
+          "comment": "as detected from PackageJson property \"bugs.url\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "cdx:npm:package:constraint:engine:node",
+          "value": ">=8"
+        },
+        {
+          "name": "cdx:npm:package:path",
+          "value": "../../node_modules/.pnpm/node_modules/fill-range"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "to-regex-range",
+      "version": "5.0.1",
+      "bom-ref": "to-regex-range@5.0.1",
+      "author": "Jon Schlinkert",
+      "description": "Pass two numbers, get a regex-compatible source string for matching ranges. Validated against more than 2.78 million test assertions.",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "purl": "pkg:npm/to-regex-range@5.0.1",
+      "externalReferences": [
+        {
+          "url": "git+https://github.com/micromatch/to-regex-range.git",
+          "type": "vcs",
+          "comment": "as detected from PackageJson property \"repository.url\""
+        },
+        {
+          "url": "https://github.com/micromatch/to-regex-range",
+          "type": "website",
+          "comment": "as detected from PackageJson property \"homepage\""
+        },
+        {
+          "url": "https://github.com/micromatch/to-regex-range/issues",
+          "type": "issue-tracker",
+          "comment": "as detected from PackageJson property \"bugs.url\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "cdx:npm:package:constraint:engine:node",
+          "value": ">=8.0"
+        },
+        {
+          "name": "cdx:npm:package:path",
+          "value": "../../node_modules/.pnpm/fill-range@7.1.1/node_modules/to-regex-range"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "is-number",
+      "version": "7.0.0",
+      "bom-ref": "is-number@7.0.0",
+      "author": "Jon Schlinkert",
+      "description": "Returns true if a number or string value is a finite number. Useful for regex matches, parsing, user input, etc.",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "purl": "pkg:npm/is-number@7.0.0",
+      "externalReferences": [
+        {
+          "url": "git+https://github.com/jonschlinkert/is-number.git",
+          "type": "vcs",
+          "comment": "as detected from PackageJson property \"repository.url\""
+        },
+        {
+          "url": "https://github.com/jonschlinkert/is-number",
+          "type": "website",
+          "comment": "as detected from PackageJson property \"homepage\""
+        },
+        {
+          "url": "https://github.com/jonschlinkert/is-number/issues",
+          "type": "issue-tracker",
+          "comment": "as detected from PackageJson property \"bugs.url\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "cdx:npm:package:constraint:engine:node",
+          "value": ">=0.12.0"
+        },
+        {
+          "name": "cdx:npm:package:path",
+          "value": "../../node_modules/.pnpm/to-regex-range@5.0.1/node_modules/is-number"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "typescript",
+      "version": "5.9.3",
+      "bom-ref": "@cra/shared@0.1.0|typescript@5.9.3",
+      "author": "Microsoft Corp.",
+      "description": "TypeScript is a language for application scale JavaScript development",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "purl": "pkg:npm/typescript@5.9.3",
+      "externalReferences": [
+        {
+          "url": "git+https://github.com/microsoft/TypeScript.git",
+          "type": "vcs",
+          "comment": "as detected from PackageJson property \"repository.url\""
+        },
+        {
+          "url": "https://www.typescriptlang.org/",
+          "type": "website",
+          "comment": "as detected from PackageJson property \"homepage\""
+        },
+        {
+          "url": "https://github.com/microsoft/TypeScript/issues",
+          "type": "issue-tracker",
+          "comment": "as detected from PackageJson property \"bugs.url\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "cdx:npm:package:constraint:engine:node",
+          "value": ">=14.17"
+        },
+        {
+          "name": "cdx:npm:package:path",
+          "value": "node_modules/typescript"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "zod",
+      "version": "3.25.76",
+      "bom-ref": "@cra/shared@0.1.0|zod@3.25.76",
+      "author": "Colin McDonnell",
+      "description": "TypeScript-first schema declaration and validation library with static type inference",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "purl": "pkg:npm/zod@3.25.76",
+      "externalReferences": [
+        {
+          "url": "git+https://github.com/colinhacks/zod.git",
+          "type": "vcs",
+          "comment": "as detected from PackageJson property \"repository.url\""
+        },
+        {
+          "url": "https://zod.dev",
+          "type": "website",
+          "comment": "as detected from PackageJson property \"homepage\""
+        },
+        {
+          "url": "https://github.com/colinhacks/zod/issues",
+          "type": "issue-tracker",
+          "comment": "as detected from PackageJson property \"bugs.url\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "cdx:npm:package:path",
+          "value": "node_modules/zod"
+        }
+      ]
+    }
+  ],
+  "dependencies": [
+    {
+      "ref": "@cra/shared@0.1.0",
+      "dependsOn": [
+        "@cra/shared@0.1.0|typescript@5.9.3",
+        "@cra/shared@0.1.0|zod@3.25.76"
+      ]
+    },
+    {
+      "ref": "@types/node@20.19.43",
+      "dependsOn": [
+        "undici-types@6.21.0"
+      ]
+    },
+    {
+      "ref": "chokidar@3.6.0",
+      "dependsOn": [
+        "@types/node@20.19.43",
+        "anymatch@3.1.3",
+        "braces@3.0.3",
+        "fsevents@2.3.3",
+        "glob-parent@5.1.2",
+        "is-binary-path@2.1.0",
+        "is-glob@4.0.3",
+        "normalize-path@3.0.0",
+        "readdirp@3.6.0",
+        "typescript@5.9.3#2"
+      ]
+    },
+    {
+      "ref": "esbuild@0.19.12",
+      "dependsOn": [
+        "@esbuild/darwin-arm64@0.19.12"
+      ]
+    },
+    {
+      "ref": "minimist@1.2.8"
+    },
+    {
+      "ref": "ms@2.1.3"
+    },
+    {
+      "ref": "picocolors@1.1.1"
+    },
+    {
+      "ref": "source-map-support@0.5.21",
+      "dependsOn": [
+        "buffer-from@1.1.2",
+        "source-map@0.6.1"
+      ]
+    },
+    {
+      "ref": "tslib@2.8.1"
+    },
+    {
+      "ref": "typescript@5.9.3",
+      "dependsOn": [
+        "@types/node@20.19.43",
+        "chokidar@3.6.0",
+        "esbuild@0.19.12",
+        "minimist@1.2.8",
+        "ms@2.1.3",
+        "picocolors@1.1.1",
+        "source-map-support@0.5.21",
+        "tslib@2.8.1"
+      ]
+    },
+    {
+      "ref": "undici-types@6.21.0"
+    },
+    {
+      "ref": "anymatch@3.1.3",
+      "dependsOn": [
+        "normalize-path@3.0.0#2",
+        "picomatch@2.3.2"
+      ]
+    },
+    {
+      "ref": "braces@3.0.3",
+      "dependsOn": [
+        "fill-range@7.1.1"
+      ]
+    },
+    {
+      "ref": "fsevents@2.3.3"
+    },
+    {
+      "ref": "glob-parent@5.1.2",
+      "dependsOn": [
+        "is-glob@4.0.3#2"
+      ]
+    },
+    {
+      "ref": "is-binary-path@2.1.0",
+      "dependsOn": [
+        "binary-extensions@2.3.0"
+      ]
+    },
+    {
+      "ref": "is-glob@4.0.3",
+      "dependsOn": [
+        "is-extglob@2.1.1"
+      ]
+    },
+    {
+      "ref": "normalize-path@3.0.0",
+      "dependsOn": [
+        "minimist@1.2.8"
+      ]
+    },
+    {
+      "ref": "readdirp@3.6.0",
+      "dependsOn": [
+        "@types/node@20.19.43",
+        "picomatch@2.3.2#2",
+        "typescript@5.9.3#2"
+      ]
+    },
+    {
+      "ref": "typescript@5.9.3#2",
+      "dependsOn": [
+        "@types/node@20.19.43",
+        "chokidar@3.6.0",
+        "esbuild@0.19.12",
+        "minimist@1.2.8",
+        "ms@2.1.3",
+        "picocolors@1.1.1",
+        "source-map-support@0.5.21",
+        "tslib@2.8.1",
+        "typescript@5.9.3"
+      ]
+    },
+    {
+      "ref": "@esbuild/darwin-arm64@0.19.12"
+    },
+    {
+      "ref": "buffer-from@1.1.2"
+    },
+    {
+      "ref": "source-map@0.6.1"
+    },
+    {
+      "ref": "normalize-path@3.0.0#2",
+      "dependsOn": [
+        "minimist@1.2.8"
+      ]
+    },
+    {
+      "ref": "picomatch@2.3.2",
+      "dependsOn": [
+        "fill-range@7.1.1#2"
+      ]
+    },
+    {
+      "ref": "fill-range@7.1.1",
+      "dependsOn": [
+        "to-regex-range@5.0.1"
+      ]
+    },
+    {
+      "ref": "is-glob@4.0.3#2",
+      "dependsOn": [
+        "is-extglob@2.1.1"
+      ]
+    },
+    {
+      "ref": "binary-extensions@2.3.0"
+    },
+    {
+      "ref": "is-extglob@2.1.1"
+    },
+    {
+      "ref": "picomatch@2.3.2#2",
+      "dependsOn": [
+        "fill-range@7.1.1#2"
+      ]
+    },
+    {
+      "ref": "fill-range@7.1.1#2",
+      "dependsOn": [
+        "to-regex-range@5.0.1"
+      ]
+    },
+    {
+      "ref": "to-regex-range@5.0.1",
+      "dependsOn": [
+        "fill-range@7.1.1#2",
+        "is-number@7.0.0"
+      ]
+    },
+    {
+      "ref": "is-number@7.0.0"
+    },
+    {
+      "ref": "@cra/shared@0.1.0|typescript@5.9.3",
+      "dependsOn": [
+        "@types/node@20.19.43",
+        "chokidar@3.6.0",
+        "esbuild@0.19.12",
+        "minimist@1.2.8",
+        "ms@2.1.3",
+        "picocolors@1.1.1",
+        "source-map-support@0.5.21",
+        "tslib@2.8.1",
+        "typescript@5.9.3"
+      ]
+    },
+    {
+      "ref": "@cra/shared@0.1.0|zod@3.25.76"
+    }
+  ]
+}
